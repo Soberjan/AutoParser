@@ -1,0 +1,41 @@
+# Путь, по которому лежит код проекта
+PYTHONPATH=src/
+
+# Папка, откуда парсер берет файлы
+PARSER_INPUT_DIR=data/cv_examples
+# Папка, куда парсер сохраняет обработанные файлы
+PARSER_OUTPUT_DIR=output/
+
+# Почта, с которой будут браться данные
+IMAP_EMAIL=it2go.development@gmail.com
+# Пароль для аймап приложнения
+IMAP_PASSWORD=
+# Аймап сервер, если почта другая, можно вместо gmail что нибудь написать
+IMAP_SERVER=imap.gmail.com
+# Папка в аймапе, откуда берем данные
+IMAP_FOLDER=BORODIN_FOLDER
+
+# Айди телеграмной апишки
+TG_API_ID=
+# Хэш телеграмной апишки
+TG_API_HASH=
+# Айди диалога, с которого качаем файлы
+TG_DIALOGUE_ID=
+# Папка, в которую сохраняем скачанные файлы
+DOWNLOAD_FOLDER=data/downloads
+
+# Путь, по которому сохраняем логи
+LOG_FILE=logs/doc_parser.log
+# Уровень логирования
+LOG_LEVEL=INFO
+# Формат логирования
+LOG_FORMAT=<green>{time}</green> | <level> {level} </level> | <cyan> {name} : {line} </cyan> | <yellow> {function} </yellow> | {message}
+
+# Хост датабазы
+DB_HOST=localhost
+# Имя датабазы
+DB_NAME=tstbase
+# Юзер датабазы
+DB_USER=postgres
+# Пароль датабазы
+DB_PASSWORD=

@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+    parse:
+        build:
+            context: .
+            args:
+                - APP_NAME=python-flow
+        volumes:
+            - ./data/cv_examples:/python-flow/input
+            - ./output:/python-flow/output
+            - ./logs:/python-flow/logs
+        environment:
+            - INPUT_DIR=/python-flow/input
+            - OUTPUT_DIR=/python-flow/output
+            - LOG_DIR=/python-flow/logs
+        command: python /python-flow/src/parser/doc_parser.py
